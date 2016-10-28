@@ -1,0 +1,24 @@
+{
+  "name": "res-handle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donbobvanbirt/res-handle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donbobvanbirt/res-handle/issues"
+  },
+  "homepage": "https://github.com/donbobvanbirt/res-handle#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
