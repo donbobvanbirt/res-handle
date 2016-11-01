@@ -1,20 +1,26 @@
-## crazycase
+## res-handle
 
-[![CircleCI](https://circleci.com/gh/cadenichols/crazycase.svg?style=shield)](https://circleci.com/gh/cadenichols/crazycase)
-
-Alternate string casing.
+Middleware for express. Adds handle method to res for an easy callback.
 
 ## Install
 
 ```bash
-$ npm install crazycase
+$ npm install res-handle
 ```
 
 ## Usage
-
+Require:
 ```js
-const crazycase = require('crazycase');
+const handle = require('res-handle');
 
-crazycase('wow crazy!') // --> 'wOw cRaZy!'
-crazycase('SOME STRING') // --> 'sOmE StRiNg'
+```
+
+Add Middleware:
+```js
+app.use(handle);
+```
+
+Pass in callback:
+```js
+Model.getData(res.handle)
 ```
