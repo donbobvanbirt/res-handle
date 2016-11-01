@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha ./test"
+    "test": "./node_modules/.bin/mocha ./test/test"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/donbobvanbirt/res-handle#readme",
   "devDependencies": {
+    "axios": "^0.15.2",
+    "body-parser": "^1.15.2",
     "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "chai-http": "^3.0.0",
+    "express": "^4.14.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
   }
 }
