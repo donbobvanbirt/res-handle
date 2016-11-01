@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/donovan/.nvm/versions/node/v6.6.0/bin/node',
+1 verbose cli   '/Users/donovan/.nvm/versions/node/v6.6.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/donovan/GitHub/res-handle',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/donovan/.npm/res-handle/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/donovan/.npm correctMkdir not in flight; initializing
+10 info lifecycle res-handle@1.0.0~prepublish: res-handle@1.0.0
+11 silly lifecycle res-handle@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/donovan/.npm/res-handle/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/donovan/GitHub/res-handle' ]
+13 verbose tarball /Users/donovan/.npm/res-handle/1.0.0/package.tgz
+14 verbose folder /Users/donovan/GitHub/res-handle
+15 verbose addLocalTarball adding from inside cache /Users/donovan/.npm/res-handle/1.0.0/package.tgz
+16 verbose correctMkdir /Users/donovan/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd res-handle@1.0.0
+18 verbose afterAdd /Users/donovan/.npm/res-handle/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/donovan/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/donovan/.npm/res-handle/1.0.0/package/package.json written
+21 silly publish { name: 'res-handle',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Middleware for express. Adds handle method to res for an easy callback.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'mocha ./test/test' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/donbobvanbirt/res-handle.git' },
+21 silly publish   keywords: [],
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/donbobvanbirt/res-handle/issues' },
+21 silly publish   homepage: 'https://github.com/donbobvanbirt/res-handle#readme',
+21 silly publish   devDependencies:
+21 silly publish    { axios: '^0.15.2',
+21 silly publish      'body-parser': '^1.15.2',
+21 silly publish      chai: '^3.5.0',
+21 silly publish      'chai-http': '^3.0.0',
+21 silly publish      express: '^4.14.0',
+21 silly publish      mocha: '^3.1.2',
+21 silly publish      sinon: '^1.17.6' },
+21 silly publish   readme: '## res-handle\n\nMiddleware for express. Adds handle method to res for an easy callback.\n\n## Install\n\n```bash\n$ npm install res-handle\n```\n\n## Usage\nRequire:\n```js\nconst handle = require(\'res-handle\');\n\n```\n\nAdd Middleware:\n```js\napp.use(handle);\n```\n\nPass in callback:\n```js\nModel.getData(res.handle)\n```\n',
+21 silly publish   readmeFilename: 'readme.md',
+21 silly publish   gitHead: '4031c48af1838344d36268db573152c572cfbda9',
+21 silly publish   _id: 'res-handle@1.0.0',
+21 silly publish   _shasum: 'f320f46608ce548eda596dfa92933d706353e73f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name res-handle
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'res-handle',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'res-handle',
+26 silly mapToRegistry   name: 'res-handle',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/res-handle
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/donovan/.npm/res-handle/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/res-handle
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 10:41:11 PM
+33 verbose request using bearer token for auth
+34 verbose request id d4deac5a3c4fb676
+35 http request PUT https://registry.npmjs.org/res-handle
+36 http 403 https://registry.npmjs.org/res-handle
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 01 Nov 2016 05:41:12 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sea1921-SEA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1477978872.266783,VS0,VE127',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/donovan/.npm/registry.npmjs.org/res-handle on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : res-handle
+40 verbose stack     at makeError (/Users/donovan/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/donovan/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/donovan/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/donovan/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/donovan/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/donovan/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid res-handle
+43 verbose cwd /Users/donovan/GitHub/res-handle
+44 error Darwin 16.0.0
+45 error argv "/Users/donovan/.nvm/versions/node/v6.6.0/bin/node" "/Users/donovan/.nvm/versions/node/v6.6.0/bin/npm" "publish"
+46 error node v6.6.0
+47 error npm  v3.10.3
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : res-handle
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
